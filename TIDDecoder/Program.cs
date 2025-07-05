@@ -96,6 +96,7 @@ namespace TIDDecoder
         [STAThread]
         static void Main(string[] args)
         {
+            //args = new string[] { "D:\\Diabolik lovers\\Lunatic Parade\\Game\\UI_03_select\\UI_03_C_01.tid" };
             AllocConsole();
             if (args.Length > 0)
             {

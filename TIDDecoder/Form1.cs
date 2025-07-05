@@ -197,11 +197,12 @@ namespace TIDDecoder
                 //outArray = decodeABGR(inArray, width, height);
                 outArray = inArray;
             }
-            header.Flags.isARGB = false;
+            //header.Flags.isARGB = false;
+            //header.Flags.isARGB = false;
             if (!header.Flags.isARGB)
             {
-                outArray = DecodeFromBGRA(outArray,width,height);
-                //outArray = DecodeFromRGBA(outArray, width, height);
+                //outArray = DecodeFromBGRA(outArray, width, height);
+                outArray = DecodeFromRGBA(outArray, width, height);
             }
             var bitmap = CreateBitmap(outArray, width, height);
            /* if (flags.isFlipVertial)
